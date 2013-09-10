@@ -11,8 +11,8 @@ define([
     var START_THRESHOLD = 50;
     var SNAP_DURATION   = 200;
     var TOGGLE_CLASS    = 'pop-out';
-    var SEARCH_ICON     = '/images/icon-search.svg';
-    var CLEAR_ICON      = '/images/icon-clear.svg';
+    var SEARCH_ICON     = 'images/icon-search.svg';
+    var CLEAR_ICON      = 'images/icon-clear.svg';
 
     var SidebarMainView = SidebarBaseView.extend({
       el: '.sidebar.main',

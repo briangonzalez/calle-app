@@ -1,5 +1,5 @@
 requirejs.config({
-    "baseUrl": "/javascripts",
+    "baseUrl": "javascripts",
     "paths": {
       "jquery":       "lib/jquery",
       "underscore":   "lib/lodash",
