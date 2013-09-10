@@ -16,6 +16,8 @@ ssh_options[:forward_agent] = true
 
 set :git_enable_submodules, 1
 
+set :rvm_ruby_string, 'ruby-2.0.0-p195'
+
 # if you want to clean up old releases on each deploy uncomment this:
 after "deploy:restart", "deploy:cleanup"
 
