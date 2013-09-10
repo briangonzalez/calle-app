@@ -71,9 +71,10 @@ define([
         Calle.MapView[ $.cookie(REMEMBER_COOKIE) ]()
       }
       else {
-        var goToSF = confirm(   [ "You're not too close to SF.", 
-                                  "Would you like us to take you there?",
-                                  "\n\nYour decision will be stored in your cookies for", 
+        var goToSF = confirm(   [ "Your location is not too close to San Francisco.", 
+                                  "Do you want to stay in SF?\n\n",
+                                  "Click OK to keep the map in SF, or click cancel to pan to your actual location.",
+                                  "Your decision will be stored in your cookies for", 
                                   REMEMBER_DAYS, 
                                   "day." ].join(' ') 
                               );
