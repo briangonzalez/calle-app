@@ -59,6 +59,7 @@ define([
       handleSearchKeypress: function(ev){
         var val     = this.$search.val();
         this.$searchIcon.attr('src', CLEAR_ICON)
+                        .addClass('clear')
         
         if ( ev.which == 13 ) {
           this.search();
@@ -69,8 +70,8 @@ define([
           this.moveIn();
         } 
 
-        if ( this.searching && val === '' ){
-          this.clearSearch();
+        if ( val === '' ){
+          this.clearSearch( this.searching );
         }
 
       },
@@ -91,12 +92,14 @@ define([
 
       clearSearch: function(search){
         this.$search.val('');
-        this.$searchIcon.attr('src', SEARCH_ICON);
+        this.$searchIcon.attr('src', SEARCH_ICON)
         this.$search.removeClass('active')
 
-        if ( search === true ){
-          Calle.MapView.findTrucksOnMap();
-          this.searching = false;
+        if ( search === true || this.$searchIcon.hasClass('clear') ){
+          if ( this.searching ) {
+            Calle.MapView.findTrucksOnMap();
+            this.searching = false;
+          }
           this.$search.removeClass('active')
         }
 
@@ -104,7 +107,7 @@ define([
 
       showLastQuery: function(){
         if ( this.lastQuery && this.searching ) {
-          this.$searchIcon.attr('src', CLEAR_ICON);
+          this.$searchIcon.attr('src', CLEAR_ICON).addClass('clear')
           this.$search.addClass('active')
                       .val(this.lastQuery)
         }

@@ -41,6 +41,7 @@
             @extend .sidebar-text;
             margin: 0; padding: 0;
             max-width: 150px;
+            cursor: pointer;
 
             &.active{ font-weight: 900; color: $color-yellow; }
             @include placeholder { color: white; }
