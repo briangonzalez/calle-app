@@ -11,7 +11,8 @@ CalleApp was built for a coding challenge, and works great and both desktop and 
 ### Backend
 
 - Sinatra
-- geocoder rubygem
+- Geocoder rubygem
+- Capistrano (deployment)
 - JSON flat-file datastore
 
 ### Frontend
