@@ -113,7 +113,7 @@ define([
 
     checkForIOSAndNotify: function(){
       if ( this.isIOS() && !this.isStandalone() && !$.cookie( IOS_COOKIE ) ) {
-        alert( "We've detected your on an iOS device. CalleApp works best installed to your homescreen." );
+        alert( "We've detected you're on an iOS device. CalleApp works best installed to your homescreen." );
         $.cookie( IOS_COOKIE, '1' )
       }
     },
