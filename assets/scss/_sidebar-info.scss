@@ -1,0 +1,38 @@
+.sidebar.truck-info{
+  z-index: $Z-sidebar + 1;
+  left: -1000px;
+
+
+  .inner{
+
+    .content{
+      
+      padding: 10%;
+
+      h2{ font-size: 1em; }
+      h5{ font-size: 0.8em; font-weight: 300; letter-spacing: 3px; }
+      p{  font-size: 0.7em; font-weight: 400; color: $color-lightgrey;  }
+
+      @include mh-mw-query-at($breakpoint-1) {
+        h2{ font-size: 1.5em; }
+        h5{ font-size: 1em; }
+        p { font-size: 0.9em; }
+      }
+      
+    }
+
+  }
+
+  .close{
+    position: absolute;
+    top: 0px; right: 10px;
+    opacity: 0.9;
+
+    cursor: pointer;
+    @include transition( all 200ms ease );
+    @include adjust-font-size-to($base-font-size*1.5);
+
+    &:hover{ opacity: 1; };
+  } 
+
+}

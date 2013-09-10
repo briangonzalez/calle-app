@@ -1,0 +1,14 @@
+
+.full {
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.sidebar-text{
+  $font-size: 18px;
+  @include adjust-font-size-to($font-size);
+  @include rhythm(1, 0, 0, 1, $font-size);
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}

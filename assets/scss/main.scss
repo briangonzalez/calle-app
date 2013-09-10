@@ -1,0 +1,48 @@
+
+
+@import "compass";
+@import "compass/typography/vertical_rhythm";
+@import "compass/layout/grid-background";
+@import "normalize";
+
+@import "mixins";
+@import "extend";
+@import "variables";
+@import "type";
+@import "sidebar";
+@import "sidebar-info";
+@import "overlay";
+
+@include establish-baseline;
+
+body, html{
+  @extend .full;
+  overflow: hidden;
+}
+
+body {
+  font-family: Lato, sans;
+  background: $color-lightgrey;
+
+  *{ @include box-sizing(border-box) }
+
+  .map-wrap {
+    @extend .full;
+    z-index: $Z-map;
+
+    .map{ width: 100%; height: 100%; }
+  }
+
+  .count{
+    background: white;
+    position: absolute;
+    top: 0; right: 0;
+    z-index: $Z-map + 1;
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 3px 8px;   
+    letter-spacing: 1px;
+  }
+
+}

@@ -1,0 +1,25 @@
+<!-- Side bar -->
+.sidebar.main{ data: { location: "out" } }
+
+  .inner
+    .content
+      %ul.actions
+        %li.search-wrap
+          %img{ src: '/images/icon-search.svg' }
+          %input.search.no-pep{ placeholder: "Search" }
+          
+        %li.locate
+          %img{ src: '/images/icon-pin.svg' }
+          Locate Me
+ 
+        %li.random
+          %img{ src: '/images/icon-shuffle.svg' }
+          Random
+
+    .logo
+      %img.truck{ src: 'images/icon-truck-white.svg' }
+      .name= "#{settings.title}"
+
+    %img.toggle{ src: '/images/icon-arrow.svg' }
+    .info
+      i

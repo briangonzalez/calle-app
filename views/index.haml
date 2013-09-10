@@ -1,0 +1,29 @@
+%html
+
+  %head
+    %title
+      = "#{settings.title}: #{settings.tagline}"
+    %meta{ name: "description", content: "#{settings.tagline}" }
+    %meta{ name: "viewport", content: "initial-scale=1.0, maximum-scale=1.0, user-scalable=no"}
+    %meta{ name: "apple-mobile-web-app-capable", content: "yes" }
+    %meta{ name: "apple-mobile-web-app-status-bar-style", content: "black" }
+    %meta{ name: "apple-mobile-web-app-title", content: "Calle" }
+
+    %link{ href: '/stylesheets/main.css', type: 'text/css', rel: 'stylesheet' }
+    %link{ href: 'http://fonts.googleapis.com/css?family=Lato:300,400,700|Merienda+One', type: 'text/css', rel: 'stylesheet' }
+
+    %script{ data: { main: 'javascripts/config' }, src: '/javascripts/lib/require.js' }
+
+    = haml :"_icons"
+
+  %body
+
+    = haml :'_overlay'
+    = haml :'_sidebar_main'
+    = haml :'_sidebar_info'
+
+    .count
+      Showing 0 trucks
+
+    .map-wrap
+      .map

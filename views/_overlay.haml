@@ -1,0 +1,41 @@
+<!-- Info Overlay -->
+.info.overlay.hidden
+  .content
+    .icon
+      %a{ href: "http://briangonzalez.org", target: "_blank" }
+        %img{ src: 'images/icon-bg.svg' }
+    %h5
+      Made by
+    %h3.text
+      Brian Gonzalez
+    .icons
+      %a{ href: "http://twitter.com/brianmgonzalez", target: "_blank" }
+        %img{ src: 'images/icon-twitter.svg' }
+
+      %a{ href: "http://github.com/briangonzalez/calle-app", target: "_blank" }
+        %img{ src: 'images/icon-github.svg' }
+
+      %a{ href: "http://briangonzalez.org", target: "_blank" }
+        %img{ src: 'images/icon-link.svg' }
+
+    = haml :'_social'
+
+
+  .close
+    &#x2715;
+
+<!-- Truck Overlay -->
+.truck.overlay
+  .content
+    .icon
+      %img{ src: 'images/icon-truck-white.svg' }
+    %h3.text
+      Finding Trucks
+
+<!-- Location Overlay -->
+.location.overlay
+  .content
+    .icon
+      %img{ src: 'images/icon-pin.svg' }
+    %h3.text
+      locating you

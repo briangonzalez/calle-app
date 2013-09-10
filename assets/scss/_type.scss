@@ -1,0 +1,43 @@
+
+  p { 
+    @include rhythm(1, 0, 0, 1, $base-font-size);
+    @include adjust-font-size-to($base-font-size);
+  }
+
+  h1{ 
+    $font-size: 42px;
+    @include adjust-font-size-to($font-size);
+    @include rhythm(1, 0, 0, 1, $font-size);
+  }
+
+  h2{
+    $font-size: 28px;
+    @include adjust-font-size-to($font-size);
+    @include rhythm(1, 0, 0, 1, $font-size);
+  }
+
+  h3{ 
+    $font-size: 20px;
+    @include adjust-font-size-to($font-size);
+    @include rhythm(1, 0, 0, 1, $font-size);
+  }
+
+  h4{ 
+    font-style: italic;
+    $font-size: $base-font-size;
+    @include adjust-font-size-to($font-size);
+    @include rhythm(1, 0, 0, 1, $font-size);
+  }
+
+  h5{ 
+    $font-size: $base-font-size;
+    @include adjust-font-size-to($font-size);
+    @include rhythm(1, 0, 0, 0, $font-size);    
+  }
+
+  h6{ 
+    font-style: italic;
+    $font-size: $base-font-size - 4px;
+    @include adjust-font-size-to($font-size);
+    @include rhythm(1, 0, 0, 1, $font-size);
+  }

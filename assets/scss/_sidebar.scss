@@ -1,0 +1,123 @@
+.sidebar {
+  background: rgba(black, 0.95);
+  height: 100%;
+  position: absolute;
+  z-index: $Z-sidebar;
+  color: white;
+  text-align: center;
+  display: inline-block;
+
+  .inner{
+    position: relative;
+    padding: 20% 1em;
+    width: 320px;
+    height: 100%;
+
+    @include query-at($breakpoint-1) {width: 420px; }
+
+    .content{
+      position: absolute;
+      top: 40%; left: 50%;
+      width: 100%;
+      text-align: center;
+      @include transform(translateX(-50%) translateY(-50%));
+
+      ul{
+        display: inline-block;
+        margin: 0; padding: 0;
+        list-style-type: none;
+
+        li{
+          text-align: left;
+          cursor: pointer;
+          @extend .sidebar-text;
+
+          img{ height: 28px; margin-right: 20px; vertical-align: middle; }
+
+          input{
+            color: white;
+            background: transparent;
+            border: none;
+            @extend .sidebar-text;
+            margin: 0; padding: 0;
+            max-width: 150px;
+
+            &.active{ font-weight: 900; color: $color-yellow; }
+            @include placeholder { color: white; }
+          }
+        }
+      }
+    }
+
+    .handle, .toggle{ @include transition( all 200ms ease ); }
+
+    .handle{
+      position: absolute;
+      bottom: 0; right: 0;
+      color: $color-darkgrey - 10;
+      font-size: 30px;
+      cursor: pointer;
+      padding: 10px;
+
+      &:hover{ color: white; }; 
+    }
+
+    .toggle{
+      position: absolute;
+      top: 15px; right: 10px;
+      width: 20px;
+      opacity: 0.2;
+      cursor: pointer;
+      @include transform( rotate(-180deg) );
+
+      &:hover{ opacity: 1; };
+      &.pop-out{ @include transform( rotate(0deg) ); }
+      &.magnify{ @include transform( scale(2) ); }
+    }    
+
+    .logo{
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      width: 100%;
+      color: black + 30;
+      @include transform( translateX(-50%) );
+      @include v-query-at($breakpoint-2) { bottom: 15%; }
+
+      img.truck{ 
+        @include transition( all 1300ms ease );
+        width: 15%; opacity: 0.1; 
+        @include v-query-at($breakpoint-1) { width: 30%; }
+        @include v-query-at($breakpoint-2) { width: 40%; }
+      }
+
+      .name, .tagline{
+        font-size: 12px;
+        cursor: pointer;
+        font-weight: 300;
+        font-family: 'Merienda One', cursive;
+        color: black + 100;
+        @include transition( all 1000ms ease );
+      }
+
+      &:hover{ 
+        img{ opacity: 0.3; }
+        color: $color-lightgrey; 
+      };
+    }
+
+    .info{ 
+      opacity: 0.4; 
+      position: absolute; left: 0; bottom: 0;
+      cursor: pointer;
+      font-weight: bold;
+      font-style: italic;
+      padding: 10px;
+      font-family: Georgia;
+
+      @include transition( all 1000ms ease );
+
+      &:hover{ opacity: 1; };
+    }
+  }
+}

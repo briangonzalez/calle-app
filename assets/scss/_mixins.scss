@@ -1,0 +1,32 @@
+
+
+@mixin query-at($breakpoint) {
+  @media (min-width: $breakpoint) { @content; }
+}
+
+@mixin v-query-at($breakpoint) {
+  @media (min-height: $breakpoint) { @content; }
+}
+
+@mixin mh-mw-query-at($breakpoint) {
+  @media (min-height: $breakpoint) and (min-width: $breakpoint) { @content; }
+}
+
+@mixin placeholder() {
+  &::-webkit-input-placeholder {
+   @content;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+     @content;  
+  }
+
+  &::-moz-placeholder {  /* Firefox 19+ */
+     @content; 
+  }
+
+  &:-ms-input-placeholder {  
+     @content; 
+  }
+}
+
