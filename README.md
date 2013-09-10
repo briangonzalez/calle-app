@@ -81,6 +81,12 @@ $ rake start
 [Sinatra](http://www.sinatrarb.com/) is trivially easy to setup, has a great commnunity (IRC, Google Groups, etc.), and uses a language I am already familiar with, Ruby. Sinatra also uses Rack middleware, which the community has buit a ton of extensions for.
 Using Sinatra also gives me access to a plethora of rubygems, like [geocoder](http://www.rubygeocoder.com/), which I used in building Calle.
 
+### Code Highlights
+
+- [7 line search engine]()
+- [Geographical distance in javascript]()
+- [jquery.pep.js](http://pep.briangonzalez.org) - glad I got to use my own plugin in a project!
+
 ## About Me
 
 You can read more about me on my [website's about](http://briangonalez.org/about). There, you'll also find an updated (hopefully) résümé (sp?).
