@@ -1,12 +1,13 @@
 require 'net/http'
 require 'json'
+require 'fileutils'
 
 module Calle
 
   class TruckData
 
     RAW_TRUCK_DATA_URL  = 'https://data.sfgov.org/api/views/rqzj-sfat/rows.json?accessType=DOWNLOAD'
-    RAW_TRUCK_DATA_FILE = File.join(App.settings.root, 'data', 'rows.json')
+    RAW_TRUCK_DATA_FILE = File.join(App.settings.root, 'data', 'trucks.json')
 
     INDEX_ID              = 0
     INDEX_NAME            = 9 
@@ -16,6 +17,8 @@ module Calle
     INDEX_FOOD_ITEMS      = 19   
     INDEX_LAT             = 22  
     INDEX_LNG             = 23  
+
+    STALE_DAYS            = 3
 
     def data
       return @data if @data
@@ -55,14 +58,20 @@ module Calle
       [INDEX_NAME, INDEX_TYPE, INDEX_ADDRESS, INDEX_FOOD_ITEMS, INDEX_LOC_DESCRIPTION]
     end
 
-    def get_latest!
+    def self.get_latest!
       uri = URI( RAW_TRUCK_DATA_URL )
       res = Net::HTTP.get_response(uri)
 
-      if res.is_a?(Net::HTTPSuccess)
+      if  res.is_a?(Net::HTTPSuccess)
+        FileUtils.mv(RAW_TRUCK_DATA_FILE, RAW_TRUCK_DATA_FILE + ".bak-#{Time.now.to_i}")
         File.open( RAW_TRUCK_DATA_FILE, 'w') {|f| f.write(res.body) }
-        @raw = nil
       end
+    end
+
+    def self.stale_data?
+      puts "**", File.stat( RAW_TRUCK_DATA_FILE ).mtime
+      puts "**", Time.now - 60*60*24*STALE_DAYS
+      File.stat( RAW_TRUCK_DATA_FILE ).mtime < ( Time.now - 60*60*24*STALE_DAYS )
     end
 
   end

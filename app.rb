@@ -10,6 +10,9 @@ module Calle
     require_relative "lib/trucks"
     require_relative "lib/truck_data"
 
+    # Get latest truck data.
+    TruckData.get_latest! if TruckData.stale_data?
+
     configure do
       set :public_folder,           './assets'
       set :trucks,                  Calle::Trucks.new
