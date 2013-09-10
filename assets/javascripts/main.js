@@ -1,10 +1,11 @@
 // Your app goes here.
 require([
-  'jquery', 
-  'views/app',
-  'views/map',
-  'views/sidebar-main',
-  'views/sidebar-info'], function($, AppView, MapView, SidebarMainView, SidebarInfoView) {
+    'jquery', 
+    'views/app',
+    'views/map',
+    'views/sidebar-main',
+    'views/sidebar-info'
+  ], function($, AppView, MapView, SidebarMainView, SidebarInfoView) {
 
   $(document).ready(function(){
     window.Calle = {};

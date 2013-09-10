@@ -15,6 +15,7 @@ requirejs.config({
     },
 
     "pep": {
+      deps: ["jquery"],
       exports: "$"
     },
 
