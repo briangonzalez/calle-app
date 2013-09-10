@@ -89,7 +89,7 @@ Using Sinatra also gives me access to a plethora of rubygems, like [geocoder](ht
 
 ## About Me
 
-You can read more about me on my [website's about](http://briangonalez.org/about). There, you'll also find an updated (hopefully) résümé (sp?).
+You can read more about me on my [website's about](http://briangonzalez.org/about). There, you'll also find an updated (hopefully) résümé (sp?).
 
 
 
