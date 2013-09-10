@@ -83,8 +83,9 @@ Using Sinatra also gives me access to a plethora of rubygems, like [geocoder](ht
 
 ### Code Highlights
 
-- [7 line search engine]()
-- [Geographical distance in javascript]()
+- [7 line search engine](https://github.com/briangonzalez/calle-app/blob/master/lib/trucks.rb#L19)
+- [Geographical distance in javascript](https://github.com/briangonzalez/calle-app/blob/master/assets/javascripts/geo.js)
+- [Homebrewed RPC!](https://github.com/briangonzalez/calle-app/blob/master/app.rb#L36)
 - [jquery.pep.js](http://pep.briangonzalez.org) - glad I got to use my own plugin in a project!
 
 ## About Me
