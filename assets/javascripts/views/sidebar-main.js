@@ -18,7 +18,7 @@ define([
       el: '.sidebar.main',
       events: {
         'click .info' :           'showInfoOverlay',
-        'click .logo':            'showInfoOverlay',
+        'click .logo .name':      'showInfoOverlay',
         'click .toggle' :         'toggle',
         'click .locate' :         'locate',
         'click .random' :         'random',
