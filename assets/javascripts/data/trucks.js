@@ -12,7 +12,7 @@ define([
         map:          window.calleMap,
         // animation:    google.maps.Animation.DROP,
         position:     new google.maps.LatLng( this.get('lat_lng')[0], this.get('lat_lng')[1] ),
-        icon:         new google.maps.MarkerImage('/images/marker-truck.png', null, null, null, new google.maps.Size(40, 40) )
+        icon:         new google.maps.MarkerImage('images/marker-truck.png', null, null, null, new google.maps.Size(40, 40) )
       });
       this.set('marker', marker)
 

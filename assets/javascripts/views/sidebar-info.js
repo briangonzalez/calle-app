@@ -38,7 +38,7 @@ define([
         this.model = model;
 
         var marker = model.get('marker');
-        marker.setIcon( new google.maps.MarkerImage('/images/marker-truck-red.png', null, null, null, new google.maps.Size(40, 40) ) )
+        marker.setIcon( new google.maps.MarkerImage('images/marker-truck-red.png', null, null, null, new google.maps.Size(40, 40) ) )
         calleMap.panTo( marker.getPosition() );
 
         this.moveIn();
@@ -49,7 +49,7 @@ define([
       resetMarker: function(){
         if ( this.model ){
           this.model.get('marker').setIcon(
-            new google.maps.MarkerImage('/images/marker-truck.png', null, null, null, new google.maps.Size(40, 40) )
+            new google.maps.MarkerImage('images/marker-truck.png', null, null, null, new google.maps.Size(40, 40) )
           );
         }
       },
