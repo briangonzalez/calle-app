@@ -1,5 +1,5 @@
 
-require "Geocoder"
+require "geocoder"
 
 module Calle
 
