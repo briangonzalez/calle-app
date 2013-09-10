@@ -69,8 +69,6 @@ module Calle
     end
 
     def self.stale_data?
-      puts "**", File.stat( RAW_TRUCK_DATA_FILE ).mtime
-      puts "**", Time.now - 60*60*24*STALE_DAYS
       File.stat( RAW_TRUCK_DATA_FILE ).mtime < ( Time.now - 60*60*24*STALE_DAYS )
     end
 
