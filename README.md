@@ -63,10 +63,12 @@ $ rake start
 - Use hashbang to anchor to trucks 
 - Make backend more RESTful
 - Document source code better
+- Add images for trucks
 
 ## Notes
 
 - [UI for styling Google Maps](http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html)
+- [Favicon Cheatsheet](https://github.com/audreyr/favicon-cheat-sheet)
 
 ## Why I chose these technologies?
 
