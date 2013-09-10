@@ -1,8 +1,12 @@
-# <img src="http://briangonzalez.org/uploads/calle-icon.svg" width=25 style="margin-right: 10px">  Calle
+# <img src="https://rawgithub.com/briangonzalez/calle-app/master/assets/images/icon-truck-grey.svg" width=25 style="margin-right: 10px">  Calle
 
 El ultimo SF food truck locator.
 
-## Technologies Used
+## About
+
+CalleApp was built for a coding challenge, and works great and both desktop and mobile devices. On iOS, CalleApp works best when added to your homescreen. 
+
+## Technologies
 
 ### Backend
 
@@ -22,8 +26,6 @@ El ultimo SF food truck locator.
 
 ## Spec
 
-Calle will:
-
 1. Find food trucks nearby by rating & cuisine
 1. Search for trucks by keyword
 1. Allow user to locate themselves
@@ -32,7 +34,7 @@ Calle will:
 ## Starting in development
 
 ```bash
-rake start
+$ rake start
 ```
 
 ## Respect
@@ -55,7 +57,7 @@ rake start
 - Make icons, colors, etc. more consistent
 - Lint code and write tests
 - Consolidate crowded map markers
-- Add ability to get directions, view tweets about trucks, etc.
+- Add ability to get directions to truck, view tweets about truck, etc.
 - Improve accessibility
 - More rigid to vertical grid
 - Use hashbang to anchor to trucks 
@@ -66,15 +68,16 @@ rake start
 
 - [UI for styling Google Maps](http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html)
 
-## Why I chose these technologies
+## Why I chose these technologies?
 
 ### Frontend
 
-[Backbone](http://backbonejs.org/) is fast and more flexible than most other MV* frontend frameworks. Using backbone also gives me the excuse of including [underscore](http://underscorejs.org/) in my apps.
+[Backbone](http://backbonejs.org/) is fast and more flexible than most other MV* frontend frameworks. Using backbone also gives me the excuse of including [underscore](http://underscorejs.org/) in my apps. I like [requirejs](http://requirejs.org/) for dependency management. I also used [jquery.pep.js](http://pep.briangonzalez.org) for the dragging of the left-hand sidebars.
 
 ### Backend
 
 [Sinatra](http://www.sinatrarb.com/) is trivially easy to setup, has a great commnunity (IRC, Google Groups, etc.), and uses a language I am already familiar with, Ruby. Sinatra also uses Rack middleware, which the community has buit a ton of extensions for.
+Using Sinatra also gives me access to a plethora of rubygems, like [geocoder](http://www.rubygeocoder.com/), which I used in building Calle.
 
 
 
