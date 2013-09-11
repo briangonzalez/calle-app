@@ -37,9 +37,7 @@ CalleApp was built for a coding challenge, and works great and both desktop and 
 $ rake start
 ```
 
-## Respect
-
-### Icons
+## Icons
 
 - [Food Truck](http://thenounproject.com/noun/food-truck/?dwn=CCBY&dwn_icon=19890#icon-No19890) by Kyle Tezak
 - [Search](http://thenounproject.com/noun/search/#icon-No15440) by Alex S. Lakas
