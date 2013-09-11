@@ -1,4 +1,4 @@
-# <img src="https://rawgithub.com/briangonzalez/calle-app/master/assets/images/icon-truck-grey.svg" width=25 style="margin-right: 10px">  CalleApp
+# <img src="https://rawgithub.com/briangonzalez/calle-app/master/assets/images/icon-truck-grey.svg" width=35 style="margin-right: 10px">  CalleApp
 
 El ultimo SF food truck locator. __[Check it out!](http://briangonzalez.org/calle)__
 
