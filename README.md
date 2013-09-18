@@ -39,12 +39,13 @@ $ rake start
 
 ## Icons
 
-- [Food Truck](http://thenounproject.com/noun/food-truck/?dwn=CCBY&dwn_icon=19890#icon-No19890) by Kyle Tezak
-- [Search](http://thenounproject.com/noun/search/#icon-No15440) by Alex S. Lakas
-- [Shuffle](http://thenounproject.com/noun/shuffle/#icon-No5050) by Dmitry Baranovskiy
-- [Utensils](http://thenounproject.com/noun/utensils/#icon-No10963) by Dmitry Baranovskiy
-- [Right Arrow](http://thenounproject.com/noun/right-arrow/#icon-No21828) by Michael Zenaty 
-- [Close Icon](http://thenounproject.com/noun/close/#icon-No15425) by Alex S. Lakas 
+- [Food Truck](http://thenounproject.com/noun/food-truck/?dwn=CCBY&dwn_icon=19890#icon-No19890) by Kyle Tezak, from The Noun Project
+- [Search](http://thenounproject.com/noun/search/#icon-No15440) by Alex S. Lakas, from The Noun Project
+- [Shuffle](http://thenounproject.com/noun/shuffle/#icon-No5050) by Dmitry Baranovskiy, from The Noun Project
+- [Utensils](http://thenounproject.com/noun/utensils/#icon-No10963) by Dmitry Baranovskiy, from The Noun Project
+- [Right Arrow](http://thenounproject.com/noun/right-arrow/#icon-No21828) by Michael Zenaty, from The Noun Project 
+- [Close Icon](http://thenounproject.com/noun/close/#icon-No15425) by Alex S. Lakas, from The Noun Project 
+- [Building](http://thenounproject.com/noun/building/#icon-No5981) by Bram van Rijen, from The Noun Project
 - [Others](http://fortawesome.github.io/Font-Awesome/) from Font Awesome 
 
 ## Todo

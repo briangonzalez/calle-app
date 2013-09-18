@@ -65,6 +65,8 @@ define([
         html.push("<h2><%= name %></h2>")
         html.push("<h5><%= address %></h5>")
         html.push("<p><%= food_items%></p>")
+        html.push("<a class='hashtag' href='https://twitter.com/search?src=typd&q=%23<%= hashtag %>' target='_blank'>")
+        html.push("#<%= hashtag.substring(0,15) %>...</a>")
         return html.join('');
       }
 

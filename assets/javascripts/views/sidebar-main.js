@@ -21,6 +21,7 @@ define([
         'click .logo .name':      'showInfoOverlay',
         'click .toggle' :         'toggle',
         'click .locate' :         'locate',
+        'click .sf' :             'gotoSF',
         'click .random' :         'random',
         'keyup .search':          'handleSearchKeypress',
         'focus .search':          'clearSearch',
@@ -54,6 +55,12 @@ define([
         var self = this;
         this.moveIn();
         setTimeout(function(){ Calle.MapView.centerSelf() }, 700);
+      },
+
+      gotoSF: function(){
+        var self = this;
+        this.moveIn();
+        setTimeout(function(){ Calle.MapView.centerSF() }, 700);
       },
 
       handleSearchKeypress: function(ev){

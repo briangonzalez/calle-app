@@ -10,7 +10,7 @@ define([
   
   REMEMBER_DAYS   = 1;
   REMEMBER_COOKIE = 'loc_decision';
-  IOS_COOKIE      = 'seen_ios_alert';
+  IOS_COOKIE      = 'seen_ios_alerft';
 
   var AppView = Backbone.View.extend({
     el: 'body',
@@ -40,7 +40,6 @@ define([
 
     showOverlay: function(overlay){
       var c = overlay ? '.'+ overlay : '';
-      console.log( this.$el.find( c + '.overlay') )
       this.$el.find( c + '.overlay')
               .removeClass('hidden');
     },
@@ -63,7 +62,7 @@ define([
 
       // If we know the user's location, use it. Else:
       // Use what they told us to use stored in the cookie.
-      // Else, ask them what we shoul do.
+      // Else, ask them what we should do.
       if ( Calle.MapView.isUserNearSF(this.coords.latitude, this.coords.longitude) ){
         Calle.MapView.centerSelf();
       } 

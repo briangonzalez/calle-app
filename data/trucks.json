@@ -10,7 +10,7 @@
       "createdAt" : 1348529041,
       "description" : "Mobile Food Facility Permits including name of vendor, location, type of food sold and status of permit.",
       "displayType" : "table",
-      "downloadCount" : 179,
+      "downloadCount" : 189,
       "numberOfComments" : 0,
       "oid" : 4207495,
       "publicationAppendEnabled" : true,
@@ -22,7 +22,7 @@
       "signed" : false,
       "tableId" : 942210,
       "totalTimesRated" : 0,
-      "viewCount" : 546,
+      "viewCount" : 589,
       "viewLastModified" : 1372259015,
       "viewType" : "tabular",
       "columns" : [ {

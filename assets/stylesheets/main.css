@@ -736,41 +736,59 @@ h6 {
   z-index: 11;
   left: -1000px;
 }
-/* line 8, ../scss/_sidebar-info.scss */
+/* line 7, ../scss/_sidebar-info.scss */
 .sidebar.truck-info .inner .content {
   padding: 10%;
 }
-/* line 12, ../scss/_sidebar-info.scss */
+/* line 11, ../scss/_sidebar-info.scss */
 .sidebar.truck-info .inner .content h2 {
   font-size: 1em;
 }
-/* line 13, ../scss/_sidebar-info.scss */
+/* line 12, ../scss/_sidebar-info.scss */
 .sidebar.truck-info .inner .content h5 {
   font-size: 0.8em;
   font-weight: 300;
   letter-spacing: 3px;
 }
-/* line 14, ../scss/_sidebar-info.scss */
+/* line 13, ../scss/_sidebar-info.scss */
 .sidebar.truck-info .inner .content p {
   font-size: 0.7em;
   font-weight: 400;
   color: #eeeeee;
 }
+/* line 14, ../scss/_sidebar-info.scss */
+.sidebar.truck-info .inner .content a.hashtag {
+  font-size: 0.7em;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #1dcaff;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  text-transform: uppercase;
+}
+/* line 17, ../scss/_sidebar-info.scss */
+.sidebar.truck-info .inner .content a.hashtag:hover {
+  color: #45f2ff;
+}
 @media (min-height: 481px) and (min-width: 481px) {
-  /* line 17, ../scss/_sidebar-info.scss */
+  /* line 21, ../scss/_sidebar-info.scss */
   .sidebar.truck-info .inner .content h2 {
     font-size: 1.5em;
   }
-  /* line 18, ../scss/_sidebar-info.scss */
+  /* line 22, ../scss/_sidebar-info.scss */
   .sidebar.truck-info .inner .content h5 {
     font-size: 1em;
   }
-  /* line 19, ../scss/_sidebar-info.scss */
+  /* line 23, ../scss/_sidebar-info.scss */
   .sidebar.truck-info .inner .content p {
     font-size: 0.9em;
   }
 }
-/* line 26, ../scss/_sidebar-info.scss */
+/* line 30, ../scss/_sidebar-info.scss */
 .sidebar.truck-info .close {
   position: absolute;
   top: 0px;
@@ -784,7 +802,7 @@ h6 {
   font-size: 1.5em;
   line-height: 2em;
 }
-/* line 35, ../scss/_sidebar-info.scss */
+/* line 39, ../scss/_sidebar-info.scss */
 .sidebar.truck-info .close:hover {
   opacity: 1;
 }

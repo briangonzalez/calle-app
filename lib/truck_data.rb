@@ -32,7 +32,8 @@ module Calle
           description:  t[INDEX_LOC_DESCRIPTION],
           address:      t[INDEX_ADDRESS],        
           food_items:   t[INDEX_FOOD_ITEMS],     
-          lat_lng:      [ t[INDEX_LAT], t[INDEX_LNG ] ]          
+          lat_lng:      [ t[INDEX_LAT], t[INDEX_LNG ] ],          
+          hashtag:      "#{t[INDEX_NAME].gsub(/[^0-9A-Za-z]/, '').downcase}"      
         }
 
       end

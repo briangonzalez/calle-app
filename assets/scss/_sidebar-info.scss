@@ -2,16 +2,20 @@
   z-index: $Z-sidebar + 1;
   left: -1000px;
 
-
   .inner{
 
     .content{
       
       padding: 10%;
 
-      h2{ font-size: 1em; }
-      h5{ font-size: 0.8em; font-weight: 300; letter-spacing: 3px; }
-      p{  font-size: 0.7em; font-weight: 400; color: $color-lightgrey;  }
+      h2          { font-size: 1em; }
+      h5          { font-size: 0.8em; font-weight: 300; letter-spacing: 3px; }
+      p           { font-size: 0.7em; font-weight: 400; color: $color-lightgrey;  }
+      a.hashtag   { 
+        font-size: 0.7em; font-weight: 300; letter-spacing: 3px; color: $color-twitter; font-style: normal; 
+        text-decoration: none; @include transition( all 200ms ease ); text-transform: uppercase;
+        &:hover{ color: $color-twitter + 40; };
+      }
 
       @include mh-mw-query-at($breakpoint-1) {
         h2{ font-size: 1.5em; }
